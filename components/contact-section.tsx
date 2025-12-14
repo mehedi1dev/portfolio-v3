@@ -170,7 +170,7 @@ export function ContactSection() {
               {"<Built with Next.js, TypeScript, and Tailwind CSS />"}
             </p>
             <p className="mt-2 text-xs md:text-sm">
-              © 2025 S M Mehedi. All rights reserved.
+              © {new Date().getFullYear()} S M Mehedi. All rights reserved.
             </p>
           </div>
         </div>

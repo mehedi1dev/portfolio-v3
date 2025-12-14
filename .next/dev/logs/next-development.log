@@ -1085,3 +1085,28 @@ Import traces:
 [00:51:01.388] Server  LOG      ✓ Compiled in 103ms
 [00:51:14.478] Server  LOG      ✓ Compiled in 106ms
 [00:52:14.977] Server  LOG      ✓ Compiled in 97ms
+[03:21:21.636] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:21:21.636] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:21:21.636] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765719367593}
+[03:36:56.086] Server  LOG      ✓ Compiled in 158ms
+[03:38:25.863] Server  LOG      ✓ Compiled in 137ms
+[03:38:56.199] Server  LOG      ✓ Compiled in 113ms
+[03:39:35.090] Server  LOG      ✓ Compiled in 109ms
+[03:39:51.581] Server  LOG      ✓ Compiled in 100ms
+[03:40:44.086] Server  LOG      ✓ Compiled in 110ms
+[03:41:25.790] Server  LOG      ✓ Compiled in 120ms
+[03:43:38.033] Server  LOG      ✓ Compiled in 114ms
+[03:43:47.763] Server  LOG      ✓ Compiled in 141ms
+[03:44:47.550] Server  LOG      ✓ Compiled in 112ms
+[03:45:12.177] Server  LOG      ✓ Compiled in 145ms
+[03:45:37.297] Server  LOG      ✓ Compiled in 107ms
+[03:45:56.582] Server  LOG      ✓ Compiled in 114ms
+[03:46:04.374] Server  LOG      ✓ Compiled in 101ms
+[03:46:31.371] Server  LOG      ✓ Compiled in 128ms
+[03:49:09.525] Server  LOG      ✓ Compiled in 102ms
+[03:49:29.031] Server  LOG      ✓ Compiled in 112ms
+[03:57:57.098] Server  LOG      ✓ Compiled in 110ms
+[03:58:11.440] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:58:11.440] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:58:11.440] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765721577403}
+[03:58:20.141] Server  LOG      ✓ Compiled in 109ms
