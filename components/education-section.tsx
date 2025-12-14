@@ -7,13 +7,11 @@ const education = [
     degree: "Master of Science in Computer Science",
     institution: "University of Technology",
     year: "2018 - 2020",
-    description: "Specialized in Software Engineering and Web Technologies",
   },
   {
     degree: "Bachelor of Science in Computer Science",
     institution: "State University",
     year: "2014 - 2018",
-    description: "Focus on algorithms, data structures, and software development",
   },
 ]
 
@@ -39,13 +37,12 @@ export function EducationSection() {
                 <GraduationCap className="text-primary" size={28} />
                 Education
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {education.map((edu, index) => (
-                  <Card key={index} className="p-5 glass-effect">
-                    <h4 className="font-bold text-lg mb-1">{edu.degree}</h4>
+                  <Card key={index} className="p-4 glass-effect">
+                    <h4 className="font-bold text-base mb-1">{edu.degree}</h4>
                     <p className="text-muted-foreground text-sm mb-1">{edu.institution}</p>
-                    <p className="text-primary text-sm font-mono mb-2">{edu.year}</p>
-                    <p className="text-sm text-muted-foreground">{edu.description}</p>
+                    <p className="text-primary text-xs font-mono">{edu.year}</p>
                   </Card>
                 ))}
               </div>
@@ -59,13 +56,13 @@ export function EducationSection() {
               </h3>
               <div className="space-y-3">
                 {certifications.map((cert, index) => (
-                  <Card key={index} className="p-4 glass-effect hover:border-primary/50 transition-all">
-                    <div className="flex items-start justify-between">
+                  <Card key={index} className="p-3.5 glass-effect hover:border-primary/50 transition-all">
+                    <div className="flex items-start justify-between gap-3">
                       <div>
-                        <h4 className="font-semibold mb-1">{cert.name}</h4>
-                        <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                        <h4 className="font-semibold text-sm mb-0.5">{cert.name}</h4>
+                        <p className="text-xs text-muted-foreground">{cert.issuer}</p>
                       </div>
-                      <Badge variant="secondary" className="font-mono text-xs">
+                      <Badge variant="secondary" className="font-mono text-xs flex-shrink-0">
                         {cert.year}
                       </Badge>
                     </div>

@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Calendar, ArrowRight, ExternalLink } from "lucide-react"
 
 const blogPosts = [
   {
@@ -10,6 +11,7 @@ const blogPosts = [
     readTime: "5 min read",
     category: "React",
     image: "/react-code-editor.jpg",
+    url: "#",
   },
   {
     title: "Building Type-Safe APIs with TypeScript",
@@ -18,6 +20,7 @@ const blogPosts = [
     readTime: "8 min read",
     category: "TypeScript",
     image: "/typescript-code.jpg",
+    url: "#",
   },
   {
     title: "Optimizing Next.js Performance",
@@ -26,6 +29,7 @@ const blogPosts = [
     readTime: "6 min read",
     category: "Next.js",
     image: "/performance-optimization.jpg",
+    url: "#",
   },
 ]
 
@@ -69,7 +73,10 @@ export function BlogSection() {
                       <span>{post.readTime}</span>
                     </div>
 
-                    <a href="#" className="flex items-center gap-1 text-primary hover:gap-2 transition-all font-medium">
+                    <a
+                      href={post.url}
+                      className="flex items-center gap-1 text-primary hover:gap-2 transition-all font-medium"
+                    >
                       Read more
                       <ArrowRight size={14} />
                     </a>
@@ -77,6 +84,15 @@ export function BlogSection() {
                 </div>
               </Card>
             ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://medium.com/@yourusername" target="_blank" rel="noopener noreferrer">
+                View All Articles on Medium
+                <ExternalLink size={16} className="ml-2" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>

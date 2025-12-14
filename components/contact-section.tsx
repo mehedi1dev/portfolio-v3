@@ -23,86 +23,84 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">Get In Touch</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">Get In Touch</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
             {"// Let's build something amazing together"}
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Info */}
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Let's talk</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                  visions.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <Card className="p-4 glass-effect flex items-center gap-3 hover:border-primary/50 transition-all">
-                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Mail size={20} />
+          <div className="space-y-8">
+            {/* Contact Info Cards - 3 in a row */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <a href="mailto:hello@developer.com" className="block" target="_blank" rel="noopener noreferrer">
+                <Card className="p-4 glass-effect flex flex-col items-center gap-3 hover:border-primary/50 hover:bg-primary/5 hover:scale-105 transition-all cursor-pointer h-full">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <Mail size={24} />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">hello@developer.com</p>
+                  <div className="text-center">
+                    <p className="text-sm text-muted-foreground mb-1">Email</p>
+                    <p className="font-medium text-sm break-all">hello@developer.com</p>
                   </div>
                 </Card>
+              </a>
 
-                <Card className="p-4 glass-effect flex items-center gap-3 hover:border-primary/50 transition-all">
-                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Github size={20} />
+              <a href="https://github.com/yourusername" className="block" target="_blank" rel="noopener noreferrer">
+                <Card className="p-4 glass-effect flex flex-col items-center gap-3 hover:border-primary/50 hover:bg-primary/5 hover:scale-105 transition-all cursor-pointer h-full">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <Github size={24} />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">GitHub</p>
-                    <p className="font-medium">@yourusername</p>
+                  <div className="text-center">
+                    <p className="text-sm text-muted-foreground mb-1">GitHub</p>
+                    <p className="font-medium text-sm">@yourusername</p>
                   </div>
                 </Card>
+              </a>
 
-                <Card className="p-4 glass-effect flex items-center gap-3 hover:border-primary/50 transition-all">
-                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Linkedin size={20} />
+              <a href="https://linkedin.com/in/yourprofile" className="block" target="_blank" rel="noopener noreferrer">
+                <Card className="p-4 glass-effect flex flex-col items-center gap-3 hover:border-primary/50 hover:bg-primary/5 hover:scale-105 transition-all cursor-pointer h-full">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <Linkedin size={24} />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <p className="font-medium">/in/yourprofile</p>
+                  <div className="text-center">
+                    <p className="text-sm text-muted-foreground mb-1">LinkedIn</p>
+                    <p className="font-medium text-sm">/in/yourprofile</p>
                   </div>
                 </Card>
-              </div>
+              </a>
             </div>
 
             {/* Contact Form */}
-            <Card className="p-6 glass-effect">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
-                  </label>
-                  <Input
-                    id="name"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                </div>
+            <Card className="p-6 md:p-8 glass-effect">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      Name
+                    </label>
+                    <Input
+                      id="name"
+                      placeholder="Your name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
+                    />
+                  </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="your@email.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                  />
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      Email
+                    </label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="your@email.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      required
+                    />
+                  </div>
                 </div>
 
                 <div>
@@ -112,14 +110,14 @@ export function ContactSection() {
                   <Textarea
                     id="message"
                     placeholder="Tell me about your project..."
-                    rows={5}
+                    rows={6}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
                   />
                 </div>
 
-                <Button type="submit" className="w-full group">
+                <Button type="submit" className="w-full px-8 group">
                   Send Message
                   <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
                 </Button>
@@ -128,9 +126,9 @@ export function ContactSection() {
           </div>
 
           {/* Footer */}
-          <div className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
-            <p className="font-mono text-sm">{"<Built with Next.js, TypeScript, and Tailwind CSS />"}</p>
-            <p className="mt-2 text-sm">© 2025 Full-Stack Developer. All rights reserved.</p>
+          <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-border text-center text-muted-foreground">
+            <p className="font-mono text-xs md:text-sm">{"<Built with Next.js, TypeScript, and Tailwind CSS />"}</p>
+            <p className="mt-2 text-xs md:text-sm">© 2025 Full-Stack Developer. All rights reserved.</p>
           </div>
         </div>
       </div>
