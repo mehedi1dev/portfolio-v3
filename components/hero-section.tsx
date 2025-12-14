@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -32,10 +32,15 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button size="lg" className="group">
-              View Projects
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-            </Button>
+            <a href="#contact">
+              <Button size="lg" className="group cursor-pointer">
+                View Projects
+                <ArrowRight
+                  className="ml-2 group-hover:translate-x-1 transition-transform"
+                  size={20}
+                />
+              </Button>
+            </a>
             <Button size="lg" variant="outline" asChild>
               <a href="#contact">Get in Touch</a>
             </Button>
@@ -43,17 +48,25 @@ export function HeroSection() {
 
           <div className="flex items-center justify-center gap-4">
             <Button size="icon" variant="ghost" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/mehedi1dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github size={20} />
               </a>
             </Button>
             <Button size="icon" variant="ghost" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/mehedi1dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin size={20} />
               </a>
             </Button>
             <Button size="icon" variant="ghost" asChild>
-              <a href="mailto:hello@example.com">
+              <a href="mailto:s.mehedi2022@gmail.com">
                 <Mail size={20} />
               </a>
             </Button>
@@ -61,5 +74,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

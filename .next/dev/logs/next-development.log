@@ -1,19 +1,1087 @@
-[00:00:02.761] Server  LOG     ⚠ Console Ninja Turbopack support is a PRO feature, currently available to community users while in preview
-[00:00:03.600] Server  LOG     
-[00:00:03.601] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:03.601] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+[00:00:02.849] Server  LOG      ✓ Ready in 1603ms
+[00:00:23.445] Server  LOG      ○ Compiling / ...
+[00:00:25.288] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:25.288] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:25.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765707311250}
+[00:00:57.144] Server  LOG      ✓ Compiled in 128ms
+[00:00:59.131] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:59.131] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:59.131] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765707345094}
+[00:01:00.048] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:00.048] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:00.048] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765707346011}
+[00:01:04.738] Server  LOG      ✓ Compiled in 139ms
+[00:01:39.095] Server  LOG      ✓ Compiled in 110ms
+[00:02:04.172] Server  LOG      ✓ Compiled in 103ms
+[00:02:08.958] Server  LOG      ✓ Compiled in 113ms
+[00:02:13.236] Server  LOG      ✓ Compiled in 140ms
+[00:02:31.157] Server  LOG      ✓ Compiled in 128ms
+[00:03:27.005] Server  LOG      ✓ Compiled in 103ms
+[00:04:10.186] Server  LOG      ✓ Compiled in 99ms
+[00:04:17.015] Server  LOG      ✓ Compiled in 85ms
+[00:04:34.422] Server  LOG      ✓ Compiled in 91ms
+[00:04:48.157] Server  LOG      ✓ Compiled in 89ms
+[00:04:54.570] Server  LOG      ✓ Compiled in 89ms
+[00:05:02.622] Server  LOG      ✓ Compiled in 96ms
+[00:05:02.728] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
 
-[00:00:03.601] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
-[00:00:03.602] Server  LOG     
-[00:00:03.602] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+Expected '</', got 'jsx text (
+            )'
 
-[00:00:03.602] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
-[00:00:03.602] Server  LOG     
-[00:00:03.986] Server  LOG      ✓ Ready in 2.3s
-[00:01:02.719] Server  LOG      ○ Compiling / ...
-[00:01:05.056] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:05.056] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:01:05.056] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765696386217}
-[00:03:23.130] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:23.130] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:23.130] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765696524287}
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:05:05.899] Browser ERROR   ./components/hero-section.tsx:45:31
+Parsing ecmascript source code failed
+  43 |             </a>
+  44 |             <Button size="lg" variant="outline" asChild>
+> 45 |               Get in Touch</a>
+     |                               ^
+> 46 |             </Button>
+     | ^^^^^^^^^^^^^
+  47 |           </div>
+  48 |
+  49 |           <div className="flex items-center justify-center gap-4">
+
+Expected '</', got 'jsx text (
+            )'
+
+Import traces:
+  Client Component Browser:
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:16.285] Server  LOG      ✓ Compiled in 93ms
+[00:07:02.589] Server  LOG      ✓ Compiled in 101ms
+[00:07:32.584] Server  LOG      ✓ Compiled in 119ms
+[00:07:40.797] Server  LOG      ✓ Compiled in 108ms
+[00:08:29.502] Server  LOG      ✓ Compiled in 106ms
+[00:08:29.627] Browser ERROR   uncaughtError: ReferenceError: Medium is not defined
+[00:08:30.409] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:30.550] Server  LOG      ✓ Compiled in 99ms
+[00:08:30.558] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765707796492}
+[00:08:31.275] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:31.275] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:31.275] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765707797235}
+[00:10:37.029] Server  LOG      ✓ Compiled in 112ms
+[00:11:39.131] Server  LOG      ✓ Compiled in 112ms
+[00:12:36.006] Server  LOG      ✓ Compiled in 89ms
+[00:13:28.100] Server  LOG      ✓ Compiled in 107ms
+[00:13:31.807] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:31.807] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:13:31.807] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765708097764}
+[00:13:39.954] Server  LOG      ✓ Compiled in 94ms
+[00:13:55.511] Server  LOG      ✓ Compiled in 92ms
+[00:20:37.310] Server  LOG      ✓ Compiled in 102ms
+[00:22:55.956] Server  LOG      ✓ Compiled in 88ms
+[00:23:13.926] Server  LOG      ✓ Compiled in 101ms
+[00:23:37.944] Server  LOG      ✓ Compiled in 112ms
+[00:23:58.472] Server  LOG      ✓ Compiled in 89ms
+[00:24:02.833] Server  LOG      ✓ Compiled in 98ms
+[00:24:25.720] Server  LOG      ✓ Compiled in 87ms
+[00:24:46.117] Server  LOG      ✓ Compiled in 93ms
+[00:24:50.654] Server  LOG      ✓ Compiled in 98ms
+[00:30:44.066] Server  LOG      ✓ Compiled in 145ms
+[00:31:02.182] Server  LOG      ✓ Compiled in 102ms
+[00:31:17.700] Server  LOG      ✓ Compiled in 100ms
+[00:31:23.557] Server  LOG      ✓ Compiled in 104ms
+[00:31:35.116] Server  LOG      ✓ Compiled in 95ms
+[00:32:36.932] Server  LOG      ✓ Compiled in 122ms
+[00:33:03.810] Server  LOG      ✓ Compiled in 93ms
+[00:33:08.018] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:33:08.018] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:33:08.018] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765709273976}
+[00:33:17.448] Server  LOG      ✓ Compiled in 93ms
+[00:33:51.855] Server  LOG      ✓ Compiled in 82ms
+[00:34:11.175] Server  LOG      ✓ Compiled in 102ms
+[00:34:17.613] Server  LOG      ✓ Compiled in 94ms
+[00:35:12.327] Server  LOG      ✓ Compiled in 100ms
+[00:35:21.205] Server  LOG      ✓ Compiled in 96ms
+[00:35:44.341] Server  LOG      ✓ Compiled in 95ms
+[00:35:48.441] Server  LOG      ✓ Compiled in 86ms
+[00:36:01.290] Server  LOG      ✓ Compiled in 111ms
+[00:36:03.626] Server  LOG      ✓ Compiled in 88ms
+[00:39:08.353] Server  LOG      ✓ Compiled in 94ms
+[00:39:45.738] Server  LOG      ✓ Compiled in 97ms
+[00:40:34.558] Server  LOG      ✓ Compiled in 111ms
+[00:40:50.115] Server  LOG      ✓ Compiled in 89ms
+[00:41:16.468] Server  LOG      ✓ Compiled in 109ms
+[00:41:20.943] Server  LOG      ✓ Compiled in 93ms
+[00:48:37.930] Server  LOG      ✓ Compiled in 102ms
+[00:49:25.272] Server  LOG      ✓ Compiled in 130ms
+[00:49:57.345] Server  LOG      ✓ Compiled in 102ms
+[00:51:01.388] Server  LOG      ✓ Compiled in 103ms
+[00:51:14.478] Server  LOG      ✓ Compiled in 106ms
+[00:52:14.977] Server  LOG      ✓ Compiled in 97ms
