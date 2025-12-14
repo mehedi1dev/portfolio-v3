@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Palette, X } from "lucide-react"
-import { useTheme } from "@/components/theme-provider"
+import { useState } from "react";
+import { Palette, X } from "lucide-react";
+import { useTheme } from "@/components/theme-provider";
 
 const presetColors = [
   { name: "Cyan", value: "#06b6d4" },
@@ -13,18 +13,18 @@ const presetColors = [
   { name: "Orange", value: "#f59e0b" },
   { name: "Red", value: "#ef4444" },
   { name: "Teal", value: "#14b8a6" },
-]
+];
 
 export function ColorPicker() {
-  const [isOpen, setIsOpen] = useState(false)
-  const { accentColor, setAccentColor } = useTheme()
+  const [isOpen, setIsOpen] = useState(false);
+  const { accentColor, setAccentColor } = useTheme();
 
   return (
     <>
       {/* Toggle Button - Bottom Right */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:scale-110 transition-transform"
+        className=" z-50 p-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:scale-110 transition-transform"
         aria-label="Color picker"
       >
         <Palette size={20} />
@@ -32,7 +32,7 @@ export function ColorPicker() {
 
       {/* Color Picker Panel */}
       {isOpen && (
-        <div className="fixed bottom-20 right-6 z-50 bg-card border border-border rounded-lg shadow-xl p-4 w-64">
+        <div className="fixed top-16 right-10 z-50 bg-card border border-border rounded-lg shadow-xl p-4 w-64">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-semibold">Accent Color</h3>
             <button
@@ -56,7 +56,8 @@ export function ColorPicker() {
                   className="w-12 h-12 rounded-lg transition-transform hover:scale-110 border-2"
                   style={{
                     backgroundColor: color.value,
-                    borderColor: accentColor === color.value ? color.value : "transparent",
+                    borderColor:
+                      accentColor === color.value ? color.value : "transparent",
                   }}
                 />
                 {accentColor === color.value && (
@@ -73,5 +74,5 @@ export function ColorPicker() {
         </div>
       )}
     </>
-  )
+  );
 }

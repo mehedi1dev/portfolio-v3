@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
+import { ColorPicker } from "./color-picker";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,6 +60,7 @@ export function Navigation() {
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
+            <ColorPicker />
             <a
               href="https://drive.google.com/drive/folders/19OA_n8pdoxrL2zEbO2ZfNeRfz3S6o4C4?usp=sharing"
               target="_blank"
@@ -78,6 +80,7 @@ export function Navigation() {
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
+            <ColorPicker />
             <button
               className="text-foreground"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -99,7 +102,7 @@ export function Navigation() {
               >
                 {item.label}
               </a>
-            ))}
+            ))}{" "}
             <a
               href="https://drive.google.com/drive/folders/19OA_n8pdoxrL2zEbO2ZfNeRfz3S6o4C4?usp=sharing"
               target="_blank"
